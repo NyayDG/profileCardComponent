@@ -1,0 +1,112 @@
+body {
+    height: 90vh;
+    background-color: rgb(25, 161, 173);
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+hr {
+    color: hsl(0, 0%, 59%);
+    border-top: none;
+}
+
+
+.bgPatterBottom {
+    position: absolute;
+    bottom: 100px;
+    right: 700px;
+}
+
+.bgPatterTop {
+    position: absolute;
+    top: 400px;
+    left: 600px;
+}
+
+.mainPage {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.patterCard {
+    border-radius: 15px 15px 0 0;
+}
+
+.gray {
+    color: hsl(0, 0%, 59%);
+}
+
+.mainPageDiv {
+    background-color: white;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.avatarImage {
+    border-radius: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 44%;
+    left: 47%;
+    border: 5px solid white;
+}
+
+.textDiv {
+    padding-top: 60px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+}
+
+/* FOOTER */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 20px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERY */
+@media (max-width: 767px) {
+    body {
+        overflow: hidden;
+        width: 100vh;
+    }
+
+    .bgPatterBottom {
+        position: absolute;
+        width: 100%;
+        bottom: 500px;
+        right: 150px;
+    }
+    
+    .bgPatterTop {
+        position: absolute;
+        width: 110%;
+        top: 400px;
+        left: 100px;
+    }
+
+    .patterCard {
+        width: 100%;
+        margin: auto;
+    }
+
+    .avatarImage {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+    }
+
+    .mainPageDiv {
+        width: 80%;
+        margin: auto;
+    }
+}
